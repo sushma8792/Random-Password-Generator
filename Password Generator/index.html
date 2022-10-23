@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>LastPass_</title>
+
+</head>
+<body  id="body">
+    <header>
+        <p><span id="title">Passw_rd </span><br>
+       <span style="color:white">Random password generator</span> </p>
+    </header>
+
+   <main>
+        <form id="form">
+ 
+        <div  id="psps">
+        <h2 id="password">PASSWORD</h2>
+        <br><p id="alert"></p>
+       </div>
+        <div id="lengthDisplay">
+        <label for="length">Length : </label>
+        <input type="range" name="length" class="slider" id="lengthRange" min="3" max="32" value="8" >
+        <input type="number" name="length" id="lengthNumber" min="3" max="32" value="8">
+    </div>
+
+     <div id="columns">
+        <div>
+            <input type="checkbox" class="checkbox" name="includeNumber"  id="number">
+            <span class="checkmark"></span>
+            <label for="includeNumber" class="container">Include Numbers</label>
+           
+        </div>
+
+        <div >
+            <input type="checkbox" class="checkbox" name="includeUpperCase" id="upperCase">
+            <span class="checkmark"></span>
+            <label for="includeUpperCase" class="container">Include uppercase</label>
+            
+        </div>
+
+        <div>
+            <input type="checkbox" class="checkbox" name="includeSymbols"  id="symbols">
+            <span class="checkmark"></span>
+            <label for="includeSymbols" class="container">Include Symbols</label>     
+        </div>
+<!-- 
+        <div>
+
+        </div>
+       -->
+    </div>
+
+       <button class="button" type="submit" id="generate">Generate Password</button>
+       <button  id="copy">Copy</button>
+
+    
+
+
+
+    
+
+    <script src="script.js"></script>
+</main>
+    <footer>
+        <div>
+        <p><span class="question">What is a password generator?</span><br>
+            A password generator is a tool that automatically generates a password based on guidelines that you set to create strong and unpredictable passwords for each of your accounts.
+          
+               <br> Good password generators do the following:
+            <br>-> Adjust guidelines to fit different sites' unique password requirements 
+            
+            <br>-> Generate strong passwords using secure technology with built-in randomness
+            <br>-> Copy the strong password in one click 
+
+        </div>
+            <div>
+            <p><span class="question">What's a strong password anyway?</span><br>
+       
+            ->  Long: The longer a password, the more secure it is. A strong password should be at least 12 characters long.
+                
+       <br>->  Random: Strong passwords use a combination of letters, numbers, cases,<br> and symbols to form an unpredictable string of characters that doesn't resemble words or names.
+                
+           <br> ->  Unique: A strong password should be unique to each account to <br>reduce vulnerability in the event of a hack.
+            </div>
+      </footer>
+</body>
+</html>
