@@ -1,24 +1,24 @@
 html{
     
-    margin:10px;
+    margin:5px;
     border: 0;
     padding: 0;
-    font-family: 'Kanit', sans-serif;;
-    
+    font-family: 'Space Grotesk', sans-serif;    
 
 }
-
 body{
+/* text color for whole page  */
+    color: #25316D;
 
-    color: rgb(23,86,220);
+/* page background */
+    background-color: #EAE3D2;
 
-
-    background-color: lightskyblue;
-     padding-top: 15px;
+     padding-top: 10px;
 
 
 }
-
+/* background - rgb(13,1,29)
+icons - rgb(10,211,239) */
 header{
     /* display: flex; */
    
@@ -35,7 +35,9 @@ header{
 
 }
 
-
+#subtitle{
+    color:#607EAA
+}
 
 
 
@@ -64,7 +66,7 @@ form{
     justify-content:center;
     min-width: 500px;
     /* padding: 10px; */
-    border-bottom:   rgb(255, 255, 255) solid 2px;
+    border-bottom:   rgb(255, 255, 255) solid 3px;
     word-break: break-all;
     /* color:rgb(238, 131, 241); */
     /* color:rgb(215,253,154); */
@@ -80,9 +82,12 @@ form{
 #generate , #copy{
     min-width: 300px;
     min-height: 3rem;
-    border:  rgb(215,253,154) solid 1px;
+    border: #231955 solid 1px;
     box-shadow: 2opx white solid;
-    background:lightskyblue;
+    background:#607EAA;
+    font-family: 'Space Grotesk', sans-serif;   
+    font-size: 17px;
+
 
     /* color: rgb(245, 152, 248); */
     /* font-family: 'Syncopate', sans-serif; */
@@ -94,16 +99,18 @@ form{
 
 
 #generate:hover,#copy:hover{
-    background-color: rgb(215,253,154);
+    background-color:#F4BFBF;
     cursor: pointer;
+    color:#231955;
     
 }
 
 .slider{
     -webkit-appearance: none;
     appearance: none;
-    height:4px;
-    background-color: rgb(196, 247, 114);
+    height:4px;  
+      background-color:#607eaa;
+
     outline: none;
     /* opacity: 0.7; */
     -webkit-transition: .2s;
@@ -116,11 +123,22 @@ form{
     width: 20px;
     height: 20px;
     border-radius: 50%; 
-    background:rgb(255, 255, 255);
+    background:#25316D;
     cursor: pointer;
   }
   
+#info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+
+}
+#info div{
+    height:50vh;
+    width: 50%;
+}
   .checkbox{
     /* appearance: none; */
     cursor: pointer;
@@ -134,14 +152,22 @@ form{
 
 
 #lengthNumber{
-    background-color: lightskyblue;
+    background-color: #607EAA;
     border:none;
-    color:  rgb(23,86,220) ;
+    color: #25316D ;
     
 
     font-weight: 200;
     font-size: 20px;
     padding: 1rem;
+}
+
+#lengthDisplay{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    column-gap: 2em;
+    align-items: center;
 }
 
 footer{
@@ -166,5 +192,60 @@ footer>div{
 .question{
     font-weight:bolder ;
     font-size: 2rem;
-    color: rgb(23,86,220) ;
+    color: #607EAA ;
+}
+
+section{
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+
+
+.questionTitle{
+    font-size: 3rem;
+    margin: 2rem 0rem;
+  
+}
+
+.faq{
+    max-width: 900px;
+    margin-top: 2rem;
+    padding-bottom: 1rem ;
+    border-bottom: 2px solid  #607EAA;
+    cursor: pointer;
+}
+.question2{
+    font-weight:bolder ;
+    font-size: 2rem;
+    color: #607EAA ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.question2 h3{
+    font-size: 1.3rem;
+}
+.answer{
+ max-height:0;
+ overflow:hidden;
+ transition: max-height 1.4s ease;
+}
+.answer p{
+    padding-top:1rem;
+    line-height: 1.60;
+    font-size: 1rem;
+}
+
+
+.faq.active .answer{
+    max-height:300px;
 }

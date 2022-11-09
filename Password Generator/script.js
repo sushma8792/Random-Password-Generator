@@ -26,19 +26,27 @@ lengthNumber.addEventListener('input',syncCharacterAmount);
 lengthRange.addEventListener('input',syncCharacterAmount);
 
 
+const faqs= document.querySelectorAll('.faq');
 
+faqs.forEach((faq) =>{
+    faq.addEventListener("click",()=>{
+        faq.classList.toggle("active");
+    })
+
+})
 function syncCharacterAmount(e){
     
     const value = e.target.value;
     if(value<=7)
     {
         lengthRange.style["background-color"] = "rgb(225, 128, 128)";
+        // lengthMessage.innerText="Oh no, it is a bit weak. Make it stronger by adding length";
       
     }
     if(value>7){
-        lengthRange.style["background-color"] ="rgb(196, 247, 114)";
+        lengthRange.style["background-color"] ="#607eaa";
+        // lengthMessage.innerText="Medium, but could be stronger.";
     }
-   
     lengthRange.value = value;
     lengthNumber.value = value;
 }

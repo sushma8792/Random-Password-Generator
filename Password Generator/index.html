@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 
     <title>LastPass_</title>
@@ -14,10 +14,10 @@
 </head>
 <body  id="body">
     <header>
-        <p><span id="title">Passw_rd </span><br>
-       <span style="color:white">Random password generator</span> </p>
+        <p><span id="title">SecuriKey</span><br>
+       <span id="subtitle">Strong password generator</span> </p>
     </header>
-
+    
    <main>
         <form id="form">
  
@@ -29,6 +29,7 @@
         <label for="length">Length : </label>
         <input type="range" name="length" class="slider" id="lengthRange" min="3" max="32" value="8" >
         <input type="number" name="length" id="lengthNumber" min="3" max="32" value="8">
+      
     </div>
 
      <div id="columns">
@@ -67,29 +68,96 @@
 
     
 
-    <script src="script.js"></script>
+   
 </main>
-    <footer>
-        <div>
-        <p><span class="question">What is a password generator?</span><br>
-            A password generator is a tool that automatically generates a password based on guidelines that you set to create strong and unpredictable passwords for each of your accounts.
-          
-               <br> Good password generators do the following:
-            <br>-> Adjust guidelines to fit different sites' unique password requirements 
-            
-            <br>-> Generate strong passwords using secure technology with built-in randomness
-            <br>-> Copy the strong password in one click 
-
-        </div>
+  
+        <!-- <div id="info">
             <div>
-            <p><span class="question">What's a strong password anyway?</span><br>
-       
-            ->  Long: The longer a password, the more secure it is. A strong password should be at least 12 characters long.
-                
-       <br>->  Random: Strong passwords use a combination of letters, numbers, cases,<br> and symbols to form an unpredictable string of characters that doesn't resemble words or names.
-                
-           <br> ->  Unique: A strong password should be unique to each account to <br>reduce vulnerability in the event of a hack.
+                <p><span class="question">What is a password generator?</span><br>
+                    A password generator is a tool that automatically generates a password based on guidelines that you set to create strong and unpredictable passwords for each of your accounts.
+                  
+                       <br> Good password generators do the following:
+                    <br>-> Adjust guidelines to fit different sites' unique password requirements 
+                    
+                    <br>-> Generate strong passwords using secure technology with built-in randomness
+                    <br>-> Copy the strong password in one click 
+        
             </div>
-      </footer>
+            <div>
+                    <p><span class="question">What's a strong password anyway?</span><br>
+               
+                    ->  Long: The longer a password, the more secure it is. A strong password should be at least 12 characters long.
+                        
+               <br>->  Random: Strong passwords use a combination of letters, numbers, cases,<br> and symbols to form an unpredictable string of characters that doesn't resemble words or names.
+                        
+                   <br> ->  Unique: A strong password should be unique to each account to <br>reduce vulnerability in the event of a hack.
+            </div>
+        </div> -->
+
+       <section>
+        <h2 class="questionTitle">How it works?</h2>
+        <div class="faq">
+            <div class="question2">
+                <h3>What is a strong password?</h3>
+                <svg width ="15" height ="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" strok="white" stroke-width="7" stroke-linecap="round"/>          
+              </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Hackers crack passwords with programs that test millions of alternatives in a second. Even so, cracking complex passwords could still take millions of years. The following factors make your password virtually unbreakable.
+
+                    It ia unique — your password unlocks only one account, app, etc.
+                    It is at least 12 characters long
+                    It includes uppercase and lowercase characters, numbers, and symbols
+                    It cannot be guessed
+                    It is not commonly used — like password, 123456, qwerty, etc.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question2">
+                <h3>Why is it important to have a strong password?</h3>
+                <svg width ="15" height ="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" strok="white" stroke-width="7" stroke-linecap="round"/>          
+              </svg>
+            </div>
+            <div class="answer">
+                <p>
+                    Having a strong password makes it harder for criminals to steal your personal details. When you use a single password only for one account, criminals cannot break into all your accounts with just one stolen password.
+
+                    <br>Many online accounts include valuable personal details, like a phone number, credit card number, home address, birth date, etc. These details can be used to impersonate you online. Hackers could also log in to, for example, your Netflix or Amazon account, with a stolen password. If they change your password, you lose your account.
+                </p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question2">
+                <h3>How to remember a strong password?</h3>
+                <svg width ="15" height ="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" strok="white" stroke-width="7" stroke-linecap="round"/>          
+              </svg>
+            </div>
+            <div class="answer">
+                <p>Remembering strong passwords can be difficult, especially if you use a password generator to create them. Make storing and remembering your passwords easier by using a password manager. This way you will never forget your passwords and they are always at hand.
+
+                    Often a password app is also a strong password generator. You can copy your passwords when needed, or even use autofill to let the app do that for you. It is safer, faster, and easier than any other password practice.</p>
+            </div>
+        </div>
+        <div class="faq">
+            <div class="question2">
+                <h3>Can a strong password be cracked?</h3>
+                <svg width ="15" height ="10" viewBox="0 0 42 25">
+                    <path d="M3 3L21 21L39 3" strok="white" stroke-width="7" stroke-linecap="round"/>          
+              </svg>
+            </div>
+            <div class="answer">
+                <p>A strong password can be cracked, but you can make it virtually impossible for criminals. Hackers use programs to crack passwords. They can try out millions of alternatives in a second. That is why passwords should be long and complex. If your password is strong enough, it could take millions of years to crack it with current technology. However, even if you use a password generator for creating your secure passwords, criminals can still steal them, or trick you into giving them away.</p>
+            </div>
+        </div>
+       </section>
+
+
+       <script src="script.js"></script> 
+  
 </body>
 </html>
